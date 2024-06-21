@@ -4,6 +4,7 @@ import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react';
 import Navigation from './navigation';
 import Form from './form'
 import theme from './theme'
+import ThemeToggle from "./ThemeToggle";
 
 
 
@@ -13,8 +14,16 @@ const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
+    <ColorModeProvider
+        options={{
+          initialColorMode: "light",
+          useSystemColorMode: false,
+        }}
+      >
       <Navigation />
+      <ThemeToggle />
       <Form />
+      </ColorModeProvider>
     </ChakraProvider>
   </React.StrictMode>
 );

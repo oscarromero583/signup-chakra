@@ -29,11 +29,9 @@ const Navigation = () => {
       <Box fontSize="20px" display="flex">
         Form
       </Box>
-      <Box fontSize="20px" display="flex">
+      
+      <Box fontSize="20px" display="flex" paddingRight="210px">
         Card
-      </Box>
-      <Box fontSize="20px" display="flex" paddingRight="80px">
-        Switch
       </Box>
     </Box>
   );
