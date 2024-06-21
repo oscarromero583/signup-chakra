@@ -6,9 +6,11 @@ InputGroup,
 InputLeftElement,
 FormControl,
 Button,
-Icon,
+Box,
 Divider
  } from "@chakra-ui/react";
+ import { EmailIcon, LockIcon, InfoIcon } from "@chakra-ui/icons";
+
 
 
 const SignUp = () => {
@@ -21,7 +23,7 @@ const SignUp = () => {
             >
                 <FormControl>
                     <InputGroup>
-                        <InputLeftElement children={<Icon name='info' />} />
+                        <InputLeftElement children={<InfoIcon name='info' />} />
                         <Divider orientation={'vertical'} borderColor={'black.300'} />
                         <Input type="text" placeholder="First Name"  borderColor={'black.500'} borderWidth={'2px'} isRequired/>
                     </InputGroup>
@@ -29,7 +31,7 @@ const SignUp = () => {
 
                 <FormControl>
                     <InputGroup>
-                        <InputLeftElement children={<Icon name='info' />} />
+                        <InputLeftElement children={<InfoIcon name='info' />} />
                         <Divider orientation={'vertical'} borderColor={'black.300'} />
                         <Input type="text" placeholder="Last Name" borderColor={'black.500'} borderWidth={'2px'}/>
                     </InputGroup>
@@ -37,7 +39,7 @@ const SignUp = () => {
                 <Divider mt={'5px'} mb={'5px'}/>
                 <FormControl>
                     <InputGroup>
-                        <InputLeftElement children={<Icon name='email' />} />
+                        <InputLeftElement children={<EmailIcon name='email' />} />
                         <Divider orientation={'vertical'} borderColor={'black.300'} />
                         <Input type="email" placeholder="Email" borderColor={'black.500'} borderWidth={'2px'}/>
                     </InputGroup>
@@ -45,7 +47,7 @@ const SignUp = () => {
 
                 <FormControl>
                     <InputGroup>
-                        <InputLeftElement children={<Icon name='lock' />} />
+                        <InputLeftElement children={<LockIcon name='lock' />} />
                         <Divider orientation={'vertical'} borderColor={'black.300'} />
                         <Input type="password" placeholder="Password" borderColor={'black.500'} borderWidth={'2px'}/>
                     </InputGroup>
@@ -57,6 +59,9 @@ const SignUp = () => {
                bgColor={'teal.200'}>
                     Sign Up
                 </Button>
+                <Box textColor={'gray.500'} textAlign={'center'}>
+                    You are very much welcome. <br /> Feel at home
+                </Box>
                 
             </Stack>
         </form>

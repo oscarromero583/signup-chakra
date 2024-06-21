@@ -6,9 +6,11 @@ InputGroup,
 InputLeftElement,
 FormControl,
 Button,
-Icon,
+Box,
 Divider
  } from "@chakra-ui/react";
+ import { EmailIcon, LockIcon } from "@chakra-ui/icons";
+
 
 
 const Login = () => {
@@ -22,7 +24,7 @@ const Login = () => {
 
                 <FormControl>
                     <InputGroup>
-                        <InputLeftElement children={<Icon name='email' />} />
+                        <InputLeftElement children={<EmailIcon name='email' />} />
                         <Divider orientation={'vertical'} borderColor={'black.300'} />
                         <Input type="email" placeholder="Email" borderColor={'black.500'} borderWidth={'2px'}/>
                     </InputGroup>
@@ -30,7 +32,7 @@ const Login = () => {
 
                 <FormControl>
                     <InputGroup>
-                        <InputLeftElement children={<Icon name='lock' />} />
+                        <InputLeftElement children={<LockIcon name='lock' />} />
                         <Divider orientation={'vertical'} borderColor={'black.300'} />
                         <Input type="password" placeholder="Password" borderColor={'black.500'} borderWidth={'2px'}/>
                     </InputGroup>
@@ -42,6 +44,9 @@ const Login = () => {
                bgColor={'teal.200'}>
                     Sign Up
                 </Button>
+                <Box textColor={'gray.500'} textAlign={'center'}>
+                    Welcome back. <br /> Feel at home
+                </Box>
             </Stack>
         </form>
     );
