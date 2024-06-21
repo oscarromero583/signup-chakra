@@ -17,7 +17,7 @@ const SignUp = () => {
             <Stack spacing={3}
             marginLeft={'25%'}
             marginRight={'25%'}
-            marginTop={'15%'}
+            marginTop={'5%'}
             >
                 <FormControl>
                     <InputGroup>
@@ -57,6 +57,7 @@ const SignUp = () => {
                bgColor={'teal.200'}>
                     Sign Up
                 </Button>
+                
             </Stack>
         </form>
     );

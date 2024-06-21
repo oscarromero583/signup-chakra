@@ -17,10 +17,10 @@ const Login = () => {
             <Stack spacing={3}
             marginLeft={'25%'}
             marginRight={'25%'}
-            marginTop={'15%'}
+            marginTop={'5%'}
             >
 
-<FormControl>
+                <FormControl>
                     <InputGroup>
                         <InputLeftElement children={<Icon name='email' />} />
                         <Divider orientation={'vertical'} borderColor={'black.300'} />
