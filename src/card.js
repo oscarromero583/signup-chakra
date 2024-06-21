@@ -2,6 +2,7 @@ import React from "react";
 import { 
 Stack,
 Box,
+Badge,
  } from "@chakra-ui/react";
  import Logo1 from './Romero-logo9.png'
 
@@ -21,27 +22,40 @@ const Card = () => {
             bgColor={'gray.200'}
             width={'300px'}
             display={'flex'}
-            alignItems={'center'}
-            justifyContent={'center'}
-            justifyItems={'center'}>
+            // alignItems={'center'}
+            // justifyContent={'center'}
+            // justifyItems={'center'}
+            flexDirection={'column'}>
                         <Box
                         display={'flex'}
                         alignItems={'center'}
                         justifyContent={'center'}
-                        rounded={'xl'}
+                        
                         overflow={'hidden'}
-                        borderRadius={'35%'}>
+                        borderRadius={'xl'}
+                        bgColor={'teal.200'}
+                        width={'300px'}>
                                 <img 
                                 src={Logo1} 
                                 alt="Logo"  
                                 width={'80px'} 
                                 height={'9px'}
                                 bgColor={'gray.500'}
-                                borderRadius={'35%'}
+                                borderRadius={'xl'}
                                 />
                          </Box>
-                         <Box>
-                            
+                         <Box marginTop={'5px'}>
+                            <Badge variant={'solid'} variantColor={'teal.200'} borderRadius={'xl'}  marginLeft={'9px'}>
+                                New?
+                            </Badge>
+                            <Badge variant={'solid'} variantColor={'teal.200'} borderRadius={'xl'} marginLeft={'9px'}>
+                                Not New
+                            </Badge>
+
+                           <Box textTransform={'uppercase'} fontSize={'12px'} color={'gray.500'} letterSpacing={'wide'} fontStyle={'arial'}>
+                            We dey for you!
+                            </Box>
+
                          </Box>
 
             </Box>
