@@ -1,7 +1,8 @@
-// src/App.js
+
 import React from 'react';
 import { Box } from '@chakra-ui/react';
 import Logo from './Romero-logo4.jpeg';
+
 
 const Navigation = () => {
   return (
@@ -23,16 +24,23 @@ const Navigation = () => {
           style={{ width: '50px', height: '40px', borderRadius: '50%' }}
         />
       </Box>
+      
       <Box fontSize="20px" display="flex">
         Home
       </Box>
+
+     
       <Box fontSize="20px" display="flex">
         Form
       </Box>
+     
+      
       
       <Box fontSize="20px" display="flex" paddingRight="210px">
         Card
       </Box>
+    
+      
     </Box>
   );
 };
