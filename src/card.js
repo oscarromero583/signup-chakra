@@ -3,6 +3,7 @@ import {
 Stack,
 Box,
 Badge,
+
  } from "@chakra-ui/react";
  import Logo1 from './Romero-logo9.png'
 
@@ -44,7 +45,7 @@ const Card = () => {
                                 borderRadius={'xl'}
                                 />
                          </Box>
-                         <Box marginTop={'5px'}>
+                            <Box marginTop={'5px'}>
                             <Badge variant={'solid'} variantColor={'teal.200'} borderRadius={'xl'}  marginLeft={'9px'}>
                                 New?
                             </Badge>
@@ -55,6 +56,7 @@ const Card = () => {
                            <Box textTransform={'uppercase'} fontSize={'12px'} color={'gray.500'} letterSpacing={'wide'} fontStyle={'arial'}>
                             We dey for you!
                             </Box>
+                          
 
                          </Box>
 
